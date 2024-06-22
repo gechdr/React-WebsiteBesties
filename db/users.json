@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a33"
+  },
+  "id": 1,
+  "username": "elysia",
+  "password": "elysia",
+  "phoneNumber": "12345678",
+  "friends": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+},
+{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a34"
+  },
+  "id": 2,
+  "username": "mei",
+  "password": "mei",
+  "phoneNumber": "87654321",
+  "friends": [
+    1
+  ]
+},
+{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a35"
+  },
+  "id": 3,
+  "username": "kiana",
+  "password": "kiana",
+  "phoneNumber": "12312312312",
+  "friends": [
+    1
+  ]
+},
+{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a36"
+  },
+  "id": 4,
+  "username": "bronya",
+  "password": "bronya",
+  "phoneNumber": "12312312312",
+  "friends": [
+    1,
+    2,
+    3
+  ]
+},
+{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a37"
+  },
+  "id": 5,
+  "username": "fuhua",
+  "password": "fuhua",
+  "phoneNumber": "12312312312",
+  "friends": [
+    1
+  ]
+},
+{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a38"
+  },
+  "id": 6,
+  "username": "kevin",
+  "password": "kevin",
+  "phoneNumber": "12312312312",
+  "friends": [
+    1
+  ]
+},
+{
+  "_id": {
+    "$oid": "655f3ae7189c969fd2195a39"
+  },
+  "id": 7,
+  "username": "eden",
+  "password": "eden",
+  "phoneNumber": "12312312312",
+  "friends": []
+}]

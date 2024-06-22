@@ -81,31 +81,23 @@ function Add() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-black border-bottom border-3 border-black">
-        <div className="container-fluid">
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <div className="w-100 px-4 py-2">
-              <h1 className="text-white">
-                Welcome, {user != null && capitalizeWords(user.username)}!
-              </h1>
-            </div>
-            <div className="w-100 d-flex justify-content-center">
-              <h1 className="text-white">Besties</h1>
-            </div>
-            <div className="w-100 d-flex justify-content-end px-5">
-              <button
-                className="btn rounded-3 text-white fs-3 text-white me-3"
-                style={{ backgroundColor: "#7c2023" }}
-              >
-                Reload
-              </button>
-              <button
-                className="btn rounded-3 text-white fs-3 text-white"
-                style={{ backgroundColor: "#7c2023" }}
-                onClick={logout}
-              >
-                Logout
-              </button>
-            </div>
+        <div className="d-flex align-items-center w-100">
+          <div className="w-100 px-4 py-2">
+            <h2 className="text-white">
+              Welcome, {user != null && capitalizeWords(user.username)}!
+            </h2>
+          </div>
+          <div className="w-100 d-flex justify-content-center">
+            <h2 className="text-white">Besties</h2>
+          </div>
+          <div className="w-100 d-flex justify-content-end px-5">
+            <button
+              className="btn rounded-3 text-white fs-4 text-white"
+              style={{ backgroundColor: "#7c2023" }}
+              onClick={logout}
+            >
+              Logout
+            </button>
           </div>
         </div>
       </nav>

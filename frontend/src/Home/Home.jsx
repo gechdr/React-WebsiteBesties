@@ -105,6 +105,11 @@ function Home() {
     return () => clearInterval(interval);
   }, [force]);
 
+  const handleSearch = () => {
+    // alert(e);
+    console.log("search");
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-black border-bottom border-3 border-black">
@@ -143,20 +148,53 @@ function Home() {
         >
           <div className="d-flex align-items-center w-100">
             <h1 className="ps-3">Home</h1>
-            <div className="w-100 d-flex justify-content-end">
+          </div>
+          <div className="d-flex align-items-center w-100 mt-3">
+            <div className="w-100 d-flex justify-content-start">
               <Link to={"/add"}>
                 <button
-                  className="btn rounded-3 fs-4 border-0 text-white"
+                  className="btn rounded-3 ms-3 fs-4 border-0 text-white"
                   style={{ backgroundColor: "#7c2023" }}
                 >
                   Add Friend
                 </button>
               </Link>
             </div>
+            <div className="w-100 d-flex justify-content-center">
+              <Link to={"/allpinned"}>
+                <button
+                  className="btn rounded-3 fs-4 border-0 text-white"
+                  style={{ backgroundColor: "#7c2023" }}
+                >
+                  All Pinned
+                </button>
+              </Link>
+            </div>
+            <div className="w-100 d-flex justify-content-end">
+              <Link to={"/broadcast"}>
+                <button
+                  className="btn rounded-3 me-3 fs-4 border-0 text-white"
+                  style={{ backgroundColor: "#7c2023" }}
+                >
+                  Broadcast
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="d-flex align-items-center w-100 mt-4">
+            <div className="w-100 d-flex mx-2">
+              <input
+                tabIndex={0}
+                className="fs-4 rounded-3 px-3 w-100"
+                type="search"
+                placeholder="Search Friend"
+                onKeyDown={handleSearch}
+              />
+            </div>
           </div>
           <div
             className="row row-cols-1 m-0 mt-4 g-3 d-flex overflow-auto"
-            style={{ maxHeight: "75vh" }}
+            style={{ maxHeight: "60vh" }}
           >
             {listFriend &&
               listFriend.map((f, index) => (

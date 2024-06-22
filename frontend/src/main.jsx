@@ -13,6 +13,8 @@ import Chat from "./Home/Chat.jsx";
 import Add from "./Add/Add.jsx";
 import ActiveChat from "./Home/ActiveChat.jsx";
 import PinChat from "./Home/PinChat.jsx";
+import AllPinned from "./Home/AllPinned.jsx";
+import Broadcast from "./Home/Broadcast.jsx";
 
 const { userLogin, authChat } = DataHandler;
 
@@ -55,6 +57,16 @@ const router = createBrowserRouter([
         path: "home/chat/:id/pin",
         loader: userLogin,
         element: <PinChat></PinChat>,
+      },
+      {
+        path: "/allpinned",
+        loader: userLogin,
+        element: <AllPinned></AllPinned>,
+      },
+      {
+        path: "/broadcast",
+        loader: userLogin,
+        element: <Broadcast></Broadcast>,
       },
     ],
   },
